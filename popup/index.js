@@ -9,7 +9,9 @@ document.getElementById("btn-dump-to-clipboard").addEventListener(
   "click",
   (event) => {
     chrome.tabs.query({}, (tabs) => {
-      const urls = tabs.map((it) => it.url);
+      const urls = tabs.map((it) => {
+        return { title: it.title, url: it.url };
+      });
       const markdown_urls_list = urls_to_markdown_list(urls);
       copy_to_clipboard(markdown_urls_list);
     });
