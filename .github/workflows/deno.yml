@@ -27,8 +27,5 @@ jobs:
         with:
           deno-version: v1.x
 
-      - name: Cache Dependencies
-        run: deno cache deps.ts
-
       - name: Run Tests
         run: deno test
