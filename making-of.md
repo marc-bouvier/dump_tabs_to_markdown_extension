@@ -38,3 +38,6 @@ document.getElementById("format-result").innerHTML = urls_to_markdown_list(
 );
 
 ```
+
+## Publish to store
+

@@ -1,8 +1,13 @@
 {
     "name": "Tab Dump to Markdown",
-    "description": "Dumps pages opened in tabs as markdown list",
     "version": "1.0",
     "manifest_version": 3,
+
+    "author": "Marc Bouvier",
+    "description": "Dumps pages opened in tabs as markdown list",
+    "default_locale": "en",
+    "homepage_url":"",
+    
     "action": {
         "default_icon": "icon.png",
         "default_popup": "popup/index.html"
