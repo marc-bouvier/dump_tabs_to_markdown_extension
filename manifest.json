@@ -8,9 +8,7 @@
         "default_popup": "popup/index.html"
     },
     "permissions": [
-        "activeTab",
-        "clipboardWrite",
-        "tabCapture",
-        "tabs"
+        "tabs",
+        "clipboardWrite"
     ]
 }
