@@ -4,6 +4,8 @@
 
 Chrome extension to copy all opened tabs as a markdown list.
 
+![Showcase GIF : User clicks on the extension icon. Then clicls on "Dump all tabs as markdown to clipboard" buton. Then all opened tabs are copied into the clipboard as a markdown list of links](/showcase/showcase_video.gif)
+
 ## Test with deno
 
 ```
