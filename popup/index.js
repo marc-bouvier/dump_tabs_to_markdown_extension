@@ -1,3 +1,4 @@
+import { copy_to_clipboard } from "../lib/clipboard.js";
 import { urls_to_markdown_list } from "../lib/formatter.js";
 
 document.getElementById("format-result").innerHTML = urls_to_markdown_list(
@@ -7,11 +8,10 @@ document.getElementById("format-result").innerHTML = urls_to_markdown_list(
 document.getElementById("btn-dump-to-clipboard").addEventListener(
   "click",
   (event) => {
-    console.log("Hello click!");
     chrome.tabs.query({}, (tabs) => {
       const urls = tabs.map((it) => it.url);
       const markdown_urls_list = urls_to_markdown_list(urls);
-      console.log(markdown_urls_list);
+      copy_to_clipboard(markdown_urls_list);
     });
   },
 );
