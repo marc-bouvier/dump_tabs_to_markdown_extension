@@ -1,13 +1,16 @@
 {
-    "manifest_version": 2,
- 
-    "name": "Tab Dump to Markdown", 
-    "description": "My first Chrome extension.",
-    "browser_action": {
+    "name": "Tab Dump to Markdown",
+    "description": "Dumps pages opened in tabs as markdown list",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
         "default_icon": "icon.png",
-        "default_popup": "popup.html"
+        "default_popup": "popup/index.html"
     },
     "permissions": [
-        "activeTab","clipboardWrite", "tabCapture", "tabs"
-     ]
+        "activeTab",
+        "clipboardWrite",
+        "tabCapture",
+        "tabs"
+    ]
 }
