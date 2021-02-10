@@ -1,4 +1,13 @@
 
-[Icône Cercle, doodle, coeur, plaque, forme, valentine Gratuit](https://icon-icons.com/fr/icone/cercle-doodle-coeur-plaque-forme-valentine/146721)
-  - [Polina Smirnova](https://icon-icons.com/fr/users/tKrpPXk94KxIPAImq2IEX/icon-sets/)
-  - https://www.apolinarias.com/
+- Icon : [growing-heart](https://iconduck.com/icons/16497/growing-heart)
+  - "Creative Commons Attribution 4.0 International
+  - https://creativecommons.org/licenses/by/4.0/
+  - Changes : 
+    - Convesion from SVG to PNG
+      - Change of size
+        - 512x512 px
+        - 256x256 px
+        - 128x128 px
+        - 64x64 px
+        - 48x48 px
+        - 32x32 px
