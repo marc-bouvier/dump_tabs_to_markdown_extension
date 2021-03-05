@@ -29,3 +29,6 @@ jobs:
 
       - name: Run Tests
         run: deno test
+
+      - name: Run Tests with makefile
+        run : make test
