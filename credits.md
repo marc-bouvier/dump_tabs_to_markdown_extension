@@ -3,7 +3,7 @@
   - "Creative Commons Attribution 4.0 International
   - https://creativecommons.org/licenses/by/4.0/
   - Changes : 
-    - Convesion from SVG to PNG
+    - Conversion from SVG to PNG
       - Change of size
         - 512x512 px
         - 256x256 px
