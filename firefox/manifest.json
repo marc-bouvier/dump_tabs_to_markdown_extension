@@ -5,7 +5,7 @@
     "author": "Marc Bouvier",
     "description": "Dumps pages opened in tabs as markdown list",
     "homepage_url": "https://github.com/marc-bouvier/dump_tabs_to_markdown_extension",
-    "action": {
+    "browser_action": {
         "default_icon": "icon_128.png",
         "default_popup": "popup/index.html"
     },
