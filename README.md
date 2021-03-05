@@ -6,8 +6,18 @@ Chrome/Firefox extension to copy all opened tabs as a markdown list into clipboa
 
 ![Showcase GIF : User clicks on the extension icon. Then clicls on "Dump all tabs as markdown to clipboard" buton. Then all opened tabs are copied into the clipboard as a markdown list of links](/showcase/showcase_video.gif)
 
+## Build with make command (recommended)
 
-## Build all and run tests
+To assemble and test the extension some targets for `make` are provided from the `Makefile` file.
+
+If you don't want to use make, please skip to the "Build manually" section below.
+
+On Windows, you may use WSL to run `make` from linux. 
+You can also install [make from chocolatey](https://chocolatey.org/packages/make).
+
+If `make` detects that it is run from Windows, it will use powershell command instead of shell commands for maximal compatibility.
+
+### Build all and run tests
 
 The following command will
 - scaffold `generated` folder and sub-folders
@@ -20,7 +30,7 @@ The following command will
 make
 ```
 
-## Build and install for chrome
+### Build and install for chrome
 
 To generate extension for chrome into `generated/chrome` :
 
@@ -34,7 +44,7 @@ In a chrome based browser open [chrome://extensions](chrome://extensions)
 - Choose `generated\chrome` folder
 - The extension should be loaded
 
-## Build and install for Firefox
+### Build and install for Firefox
 
 To generate extension for chrome into `generated/firefox` :
 
@@ -47,13 +57,31 @@ In Firefox browser open [about:debugging#/runtime/this-firefox](about:debugging#
 - Choose `generated\firefox\manifest.json`
 - The extension should be loaded
 
-## Test with deno
+### Test with deno
 
 ```
 make test
 ```
 
-If you have deno already installed, you can also run tests with deno command directly.
+## Build manually
+
+If you don't have the `make` command installed you can still assemble the extension manually the following way:
+
+- create a folder called `generated`
+
+### For chrome extension
+- create a folder called `generated/chrome`
+- copy `chrome/manifest.json` into `generated/chrome`
+- copy the consent of the `shared` folder into `generated/chrome`
+
+### For Firefox extension
+- create a folder called `generated/firefox`
+- copy `firefox/manifest.json` into `generated/firefox`
+- copy the consent of the `shared` folder into `generated/firefox`
+
+### Test with deno
+
+First, you need to install deno : https://deno.land/#installation
 
 ```
 deno test
