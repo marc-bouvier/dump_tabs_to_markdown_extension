@@ -2,7 +2,7 @@ ifeq ($(OS),Windows_NT)
 	PWSH_CMD = pwsh -Command
 	MKDIR_P = ${PWSH_CMD} New-Item -ItemType Directory -Force
 	CP_R = ${PWSH_CMD} Copy-Item -Force -Recurse 
-	RM_RF_GENERATED = ${PWSH_CMD} Remove-Item -Force generated
+	RM_RF_GENERATED = ${PWSH_CMD} Remove-Item -Recurse -Force generated
 	INSTALL_DENO = ${PWSH_CMD}  "Invoke-WebRequest https://deno.land/x/install/install.ps1 -useb | Invoke-Expression"
 	DENO_IS_INSTALLED = $(shell ${PWSH_CMD} Test-Path "$$env:Home/.deno/bin/deno.exe")
 	DENO = ${HOME}/.deno/bin/deno
